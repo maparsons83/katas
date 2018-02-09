@@ -464,7 +464,7 @@
             let newElement4 = document.createElement ('div');
             newElement4.className = "result5";
 
-            if (i % 2 === 0) {
+            if (divWidth % 2 === 0) {
 
                 newElement4.style.width = divWidth + "px";
                 newElement4.style.background = 'red';
@@ -476,7 +476,7 @@
 
             }
 
-            else if (i % 2 != 0) {
+            else if (divWidth % 2 != 0) {
 
                 newElement4.style.width = divWidth + "px";
                 newElement4.style.background = 'gray';
