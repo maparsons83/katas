@@ -380,6 +380,117 @@
 
     }
 
+    function problemTwenty () {
+
+        let destination = document.getElementById("div20");
+        let divWidth = 100;
+        for (let i = 0; i <= 20; i++) {
+
+                let newElement1 = document.createElement("div");
+                newElement1.className = "result2"; 
+            
+                newElement1.style.width = divWidth + "px";
+                divWidth+=5;  
+
+                let newNum = document.createTextNode(i + ', ');
+                newElement1.appendChild(newNum);
+
+                destination.appendChild(newElement1);
+        
+            
+        }
+        
+    }
+
+    function problemTwentyOne () {
+
+        let destination = document.getElementById('div21')
+        
+        for (let i=0; i <= 20; i++) {
+
+            let divWidth = sampleArray[i]
+
+            let newElement2 = document.createElement ('div');
+            newElement2.className = "result3";
+
+            newElement2.style.width = divWidth + "px";
+
+            let newNum = document.createTextNode(i + ', ');
+            newElement2.appendChild(newNum);
+
+            destination.appendChild(newElement2);
+        }
+    }
+
+    function problemTwentyTwo () {
+
+        let destination = document.getElementById('div22')
+
+        for (let i=0; i <= 20; i++) {
+
+            let newElement3 = document.createElement ('div');
+            newElement3.className = 'result4'
+
+            if (i % 2 === 0) {
+                newElement3.style.background = 'red'
+                
+                let newNum=document.createTextNode(i + ', ');
+                newElement3.appendChild(newNum);
+
+                destination.appendChild(newElement3);
+            }
+
+            else if (i % 2 != 0) {
+                newElement3.style.background = 'gray'
+                
+                let newNum=document.createTextNode(i + ', ');
+                newElement3.appendChild(newNum);
+
+                destination.appendChild(newElement3);
+            }
+
+            
+        }
+    }
+
+    function problemTwentyThree () {
+
+        let destination = document.getElementById('div23')
+
+        for (let i=0; i <= 20; i++) {
+
+            let divWidth = sampleArray[i]
+
+            let newElement4 = document.createElement ('div');
+            newElement4.className = "result5";
+
+            if (i % 2 === 0) {
+
+                newElement4.style.width = divWidth + "px";
+                newElement4.style.background = 'red';
+
+                let newNum = document.createTextNode(i + ', ');
+                newElement4.appendChild(newNum);
+
+                destination.appendChild(newElement4);
+
+            }
+
+            else if (i % 2 != 0) {
+
+                newElement4.style.width = divWidth + "px";
+                newElement4.style.background = 'gray';
+
+                let newNum = document.createTextNode(i + ', ');
+                newElement4.appendChild(newNum);
+
+                destination.appendChild(newElement4);
+            }
+
+            
+        }
+    }
+
     
 
 
@@ -403,6 +514,10 @@
     problemSeventeen()
     problemEighteen();
     problemNineteen();
+    problemTwenty();
+    problemTwentyOne();
+    problemTwentyTwo();
+    problemTwentyThree();
 
 
 }
